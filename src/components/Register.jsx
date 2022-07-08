@@ -1,7 +1,9 @@
 import React, { useRef } from "react";
+
 import "./Register.css";
 
 function Register({ setLoginTab, state, setState }) {
+
   const pass = useRef();
   let userDetailsLocal = JSON.parse(
     localStorage.getItem("userDetails") || "[]"
